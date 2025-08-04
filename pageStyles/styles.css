@@ -526,6 +526,9 @@ line-height: 140%;
   background-color: #E3E4EF;
   transition: 0.3s;
 }
+.courseProgram-filter__item:hover{
+  color: #4B47EF;
+}
 .courseProgram-filter__item._filter-active{
   background-color: #1F1F1F;
   color: #fff;
@@ -1093,7 +1096,10 @@ margin-bottom: 0;
     text-decoration: underline;
 }
 .subLesson-agree a:hover{
-    color: #1573FF;
+    color: #4B47EF;
+}
+.subLesson-agree a:active{
+  color: #3733F1;
 }
 .icon-success {
   vertical-align: middle;
@@ -1172,7 +1178,10 @@ margin-bottom: 0;
   text-decoration: underline;
 }
 .subLesson-form__mssg-subtitle a:hover{
-  color: #1573FF;
+  color: #4B47EF;
+}
+.subLesson-form__mssg-subtitle a:active{
+  color: #3733F1;
 }
 /* форма  */
  .req_error .form__input,
