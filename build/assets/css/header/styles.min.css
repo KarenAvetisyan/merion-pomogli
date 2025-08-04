@@ -269,6 +269,9 @@ input {
    ._header-nav__list a:hover{
     color: #4B47EF;
    }
+    ._header-nav__list a:active{
+    color: #3733F1;
+   }
   ._header-btn {
     display: -webkit-box;
     display: -ms-flexbox;
