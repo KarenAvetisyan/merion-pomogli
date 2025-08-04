@@ -726,6 +726,13 @@
                 <div class="courseProgram-title__wrap text-center">
                     <h2>Популярные программы</h2>
                 </div>
+                <div class="courseProgram-filter__wrap">
+                    <ul class="courseProgram-filter">
+                        <li class="courseProgram-filter__item _filter-active">Инфраструктура</li>
+                        <li class="courseProgram-filter__item">Разработка</li>
+                        <li class="courseProgram-filter__item">Безопасность</li>
+                    </ul>
+                </div>
                 <div class="courseProgram-wrap">
                     <div class="courseProgram-subtitle">Профессии</div>
                     <div class="gCourses-list">
@@ -1146,9 +1153,11 @@
                     <div class="subLesson-col">
                         <img loading="lazy" class="subLesson-gradient" src="./pageImages/gradient.webp" alt="gradient bg">
                         <div class="subLesson-info">
+                            <span class="subLesson-info__star1" data-parallax data-speed="0.8"></span>
+                            <span class="subLesson-info__star2" data-parallax data-speed="0.9"></span>
                             <h2 class="subLesson-title">запишись на <span class="blue">бесплатное</span> пробное занятие</h2>
                             <a href="#" class="_btn-purple">Записаться</a>
-                            <div class="subLesson-cursor__icon">
+                            <div class="subLesson-cursor__icon" data-parallax data-speed="0.4">
                                 <img loading="lazy" src="./pageImages/cursor-icon.svg" alt="img">
                             </div>
                         </div>
@@ -1250,7 +1259,230 @@
                 </div>
             </div>
         </section>
+        <section class="section subLesson">
+            <div class="_container-xl">
+                <div class="subLesson-wrap">
+                    <div class="subLesson-col">
+                        <img loading="lazy" class="subLesson-gradient" src="./pageImages/gradient.webp" alt="gradient bg">
+                        <div class="subLesson-info">
+                            <span class="subLesson-info__star1" data-parallax data-speed="0.8"></span>
+                            <span class="subLesson-info__star2" data-parallax data-speed="0.9"></span>
+                            <h2 class="subLesson-title">запишись на <span class="blue">бесплатное</span> пробное занятие</h2>
+                            <a href="#" class="_btn-purple">Записаться</a>
+                            <div class="subLesson-cursor__icon" data-parallax data-speed="0.4">
+                                <img loading="lazy" src="./pageImages/cursor-icon.svg" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subLesson-col">
+                        <div class="subLesson-form__wrap">
+                            <form action="" id="_form">
+                                <div class="subLesson-form__title">Получи консультацию</div>
+                                <div class="subLesson-form__txt">Менеджеры помогут выбрать направление и расскажут о форматах и программах обучения</div>
+                                <div class="form__item-wrap">
+                                    <div class="form__item">
+                                        <input type="text" name="name" placeholder="Имя" class="form__input _req">
+                                        <div class="req__text">Обязательное поле</div>
+                                    </div>
+                                    <div class="form__item">
+                                        <input type="text" name="email" placeholder="Электронная почта" class="form__input _req _email">
+                                        <div class="req__text">Обязательное поле</div>
+                                        <div class="error__text">Пожалуйста, укажи корректный e-mail</div>
+                                    </div>
+                                    <div class="form__item form__item--phone">
+                                        <div class="form__flag-select">
+                                            <div class="select">
+                                                <div class="flag__icon">
+                                                    <img class="flag__img" src="./pageImages/flags/ru.svg" alt="flag">
+                                                </div>
+                                                <input type="text" class="flag__code" value="" readonly>
+                                                <input type="text" class="select__input show-max-768" onfocus="this.blur();">
+                                            </div>
+                                            <div class="option-container">
+                                                <div class="search__box">
+                                                    <input type="search" placeholder="Поиск" class="search">
+                                                    <i class="icon icon-search"></i>
+                                                    <i class="icon icon-search-close" style="display: none;"></i>
+                                                </div>
+                                                <div class="option-container-wrap">
+                                                    <div class="option selected" data-country="Российская Федерация" data-code="+7" data-mask="(999) 999-99-99">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/ru.svg" class="flag" alt="flag"> <span>+7</span>
+                                                        </div>
+                                                        Российская Федерация
+                                                    </div>
+                                                    <div class="option" data-country="Казахстан" data-code="+7" data-mask="(999) 999-99-99">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/kz.svg" class="flag" alt="flag"> <span>+7</span>
+                                                        </div>
+                                                        Казахстан
+                                                    </div>
+                                                    <div class="option" data-country="Белоруссия" data-code="+375" data-mask="(99) 999-99-99">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/be.svg" class="flag" alt="flag"> <span>+375</span>
+                                                        </div>
+                                                        Белоруссия
+                                                    </div>
+                                                    <div class="option" data-country="Кыргызстан" data-code="+996" data-mask="(99) 999-99-99">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/kg.svg" class="flag" alt="flag"> <span>+996</span>
+                                                        </div>
+                                                        Кыргызстан
+                                                    </div>
+                                                    <div class="option" data-country="Узбекистан" data-code="+998" data-mask="(99) 999-99-99">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/uz.svg" class="flag" alt="flag"> <span>+998</span>
+                                                        </div>
+                                                        Узбекистан
+                                                    </div>
+                                                    <div class="option" data-country="Гондурас" data-code="+504" data-mask="9999-9999">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/hd.svg" class="flag" alt="flag"> <span>+504</span>
+                                                        </div>
+                                                        Гондурас
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__item-inner">
+                                            <input type="tel" name="phone" placeholder="Телефон" class="form__input _phone phone-mask _req">
+                                            <div class="req__text">Обязательное поле</div>
+                                            <div class="error__text">Пожалуйста, укажи корректный номер</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="subLesson-submit _btn-purple">Получить консультацию</button>
+                                <p class="subLesson-agree">Отправляя заявку, вы соглашаетесь на <a href="#">обработку персональных данных</a> </p>
+                            </form>
+                            <!-- Всё получилось! -->
 
+                            <div class="subLesson-form__mssg subLesson-form__success">
+                                <div class="subLesson-form__mssg-title"><i class="icon-success"></i>Всё получилось!</div>
+                                <div class="subLesson-form__mssg-subtitle">Заявка принята — скоро свяжемся, расскажем про обучение и ответим на все вопросы.</div>
+                            </div>
+                            <!-- error - что-то пошло не так -->
+
+                            <!-- <div class="subLesson-form__mssg subLesson-form__error">
+                                <div class="subLesson-form__mssg-title"><i class="icon-error"></i>что-то пошло не так</div>
+                                <div class="subLesson-form__mssg-subtitle">Попробуйте ещё раз, а если не получится — напишите нам на почту <a href="mailto:info@merionet.ru">info@merionet.ru</a>, мы поможем!</div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section subLesson">
+            <div class="_container-xl">
+                <div class="subLesson-wrap">
+                    <div class="subLesson-col">
+                        <img loading="lazy" class="subLesson-gradient" src="./pageImages/gradient.webp" alt="gradient bg">
+                        <div class="subLesson-info">
+                            <span class="subLesson-info__star1" data-parallax data-speed="0.8"></span>
+                            <span class="subLesson-info__star2" data-parallax data-speed="0.9"></span>
+                            <h2 class="subLesson-title">запишись на <span class="blue">бесплатное</span> пробное занятие</h2>
+                            <a href="#" class="_btn-purple">Записаться</a>
+                            <div class="subLesson-cursor__icon" data-parallax data-speed="0.4">
+                                <img loading="lazy" src="./pageImages/cursor-icon.svg" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subLesson-col">
+                        <div class="subLesson-form__wrap">
+                            <form action="" id="_form">
+                                <div class="subLesson-form__title">Получи консультацию</div>
+                                <div class="subLesson-form__txt">Менеджеры помогут выбрать направление и расскажут о форматах и программах обучения</div>
+                                <div class="form__item-wrap">
+                                    <div class="form__item">
+                                        <input type="text" name="name" placeholder="Имя" class="form__input _req">
+                                        <div class="req__text">Обязательное поле</div>
+                                    </div>
+                                    <div class="form__item">
+                                        <input type="text" name="email" placeholder="Электронная почта" class="form__input _req _email">
+                                        <div class="req__text">Обязательное поле</div>
+                                        <div class="error__text">Пожалуйста, укажи корректный e-mail</div>
+                                    </div>
+                                    <div class="form__item form__item--phone">
+                                        <div class="form__flag-select">
+                                            <div class="select">
+                                                <div class="flag__icon">
+                                                    <img class="flag__img" src="./pageImages/flags/ru.svg" alt="flag">
+                                                </div>
+                                                <input type="text" class="flag__code" value="" readonly>
+                                                <input type="text" class="select__input show-max-768" onfocus="this.blur();">
+                                            </div>
+                                            <div class="option-container">
+                                                <div class="search__box">
+                                                    <input type="search" placeholder="Поиск" class="search">
+                                                    <i class="icon icon-search"></i>
+                                                    <i class="icon icon-search-close" style="display: none;"></i>
+                                                </div>
+                                                <div class="option-container-wrap">
+                                                    <div class="option selected" data-country="Российская Федерация" data-code="+7" data-mask="(999) 999-99-99">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/ru.svg" class="flag" alt="flag"> <span>+7</span>
+                                                        </div>
+                                                        Российская Федерация
+                                                    </div>
+                                                    <div class="option" data-country="Казахстан" data-code="+7" data-mask="(999) 999-99-99">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/kz.svg" class="flag" alt="flag"> <span>+7</span>
+                                                        </div>
+                                                        Казахстан
+                                                    </div>
+                                                    <div class="option" data-country="Белоруссия" data-code="+375" data-mask="(99) 999-99-99">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/be.svg" class="flag" alt="flag"> <span>+375</span>
+                                                        </div>
+                                                        Белоруссия
+                                                    </div>
+                                                    <div class="option" data-country="Кыргызстан" data-code="+996" data-mask="(99) 999-99-99">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/kg.svg" class="flag" alt="flag"> <span>+996</span>
+                                                        </div>
+                                                        Кыргызстан
+                                                    </div>
+                                                    <div class="option" data-country="Узбекистан" data-code="+998" data-mask="(99) 999-99-99">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/uz.svg" class="flag" alt="flag"> <span>+998</span>
+                                                        </div>
+                                                        Узбекистан
+                                                    </div>
+                                                    <div class="option" data-country="Гондурас" data-code="+504" data-mask="9999-9999">
+                                                        <div class="flag__and__code">
+                                                            <img src="./pageImages/flags/hd.svg" class="flag" alt="flag"> <span>+504</span>
+                                                        </div>
+                                                        Гондурас
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__item-inner">
+                                            <input type="tel" name="phone" placeholder="Телефон" class="form__input _phone phone-mask _req">
+                                            <div class="req__text">Обязательное поле</div>
+                                            <div class="error__text">Пожалуйста, укажи корректный номер</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="subLesson-submit _btn-purple">Получить консультацию</button>
+                                <p class="subLesson-agree">Отправляя заявку, вы соглашаетесь на <a href="#">обработку персональных данных</a> </p>
+                            </form>
+                            <!-- Всё получилось! -->
+
+                            <!-- <div class="subLesson-form__mssg subLesson-form__success">
+                                <div class="subLesson-form__mssg-title"><i class="icon-success"></i>Всё получилось!</div>
+                                <div class="subLesson-form__mssg-subtitle">Заявка принята — скоро свяжемся, расскажем про обучение и ответим на все вопросы.</div>
+                            </div> -->
+                            <!-- error - что-то пошло не так -->
+
+                            <div class="subLesson-form__mssg subLesson-form__error">
+                                <div class="subLesson-form__mssg-title"><i class="icon-error"></i>что-то пошло не так</div>
+                                <div class="subLesson-form__mssg-subtitle">Попробуйте ещё раз, а если не получится — напишите нам на почту <a href="mailto:info@merionet.ru">info@merionet.ru</a>, мы поможем!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
 

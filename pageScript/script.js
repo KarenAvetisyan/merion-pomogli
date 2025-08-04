@@ -94,6 +94,53 @@
         }
     });
 
+    // переключалка между направлениями: инфраструктура/разработка/безопасность
+    const filterItems = document.querySelectorAll(".courseProgram-filter__item");
+    filterItems.forEach(item => {
+        item.addEventListener("click", () => {
+            // Remove _filter-active from all
+            filterItems.forEach(i => i.classList.remove("_filter-active"));
+            // Add _filter-active to clicked one
+            item.classList.add("_filter-active");
+        });
+    });
+
+     // parallax 
+    (function () {
+            const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent) || ('ontouchstart' in window);
+
+            if (isMobile) {
+            // Don't run the parallax effect on mobile devices
+            return;
+            }
+
+            const elements = document.querySelectorAll('[data-parallax]');
+            const state = { x: 0, y: 0 };
+
+            document.addEventListener('mousemove', (e) => {
+            const { innerWidth: width, innerHeight: height } = window;
+            const offsetX = (e.clientX / width - 0.5) * 2; 
+            const offsetY = (e.clientY / height - 0.5) * 2; 
+
+            state.x = offsetX;
+            state.y = offsetY;
+            });
+
+            function animate() {
+            elements.forEach(el => {
+            const speed = parseFloat(el.dataset.speed) || 0.3;
+            const translateX = -state.x * 50 * speed;
+            const translateY = -state.y * 50 * speed;
+            const rotateZ = -state.x * 10 * speed;
+
+            el.style.transform = `translate(${translateX}px, ${translateY}px) rotateZ(${rotateZ}deg)`;
+            });
+
+            requestAnimationFrame(animate);
+            }
+
+            animate();
+    })();
     
     // FORM VALIDATION AND SUBMIT
     const _form = document.getElementById('_form');
